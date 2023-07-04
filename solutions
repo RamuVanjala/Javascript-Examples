@@ -42,6 +42,10 @@ const Numbers =["5", "9", "7", "-18"];
 Numbers.sort((a, b) => a-b);
 console.log(Numbers);
 
+//Write a simple JavaScript program to join all elements of the following array into a string.
+const array = ["Red", "Green", "White", "Black"];
+const result = array.join('_');
+console.log(result);
 
 
 
