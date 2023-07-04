@@ -96,6 +96,35 @@ const is_array = (num) => {
 }
 console.log(is_array([1,2,3]));
 
+//Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+const test = "025468";
+var result = "";
+const insert_dashes = (input) => {
+    result += input[0];
+    for(let i = 1; i < input.length; i++) {
+        if (input[i-1]%2 === 0 && input[i]%2 === 0)
+        {
+            result += "-";
+        }
+        result += input[i];
+    }
+    return result;
+}
+console.log(insert_dashes(test));
+
+
+
+//Write a JavaScript program to find the sum of squares of a numerical vector.
+const test = [2,6,7,8,9];
+let result = 0;
+const sum_of_squares = (input) => {
+    for (let i = 0; i < input.length; i++) {
+        result += input[i]*input[i];
+    }
+    return result;
+}
+console.log(sum_of_squares(test));
+
 
 
 
