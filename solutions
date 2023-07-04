@@ -1,19 +1,19 @@
-
-3rd
-const first = (input, n) => {
-    if (!input.length || n <= 0) {
-        return [];
-    }
-    else if (!n && input.length) {
-        return input[0];
-    }
-    else {
-        const result = [];
-        if (n > input.length) n = input.length;
-        for (let i = 0; i < n; i++) {
-            result.push(input[i]);
-        }
-        return result;
-    }
+4th
+const last = (input, n) => {
+    if (!n && input.length) {
+       return input.at(-1);
+   }
+   else {
+       const result = [];
+       if (n > input.length) n = input.length;
+       for (let i = input.length-n; i <= input.length-1; i++) {
+           result.push(input[i]);
+       }
+       return result;
+   }
 }
-console.log(first([1,2,3,4,5,6,7,8,9],22));
+console.log(last([1,2,3,4,5],4));
+
+
+
+
