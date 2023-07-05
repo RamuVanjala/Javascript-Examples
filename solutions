@@ -147,8 +147,17 @@ console.log(sum_and_prod(Number));
 
 
 
-
-
+//Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
+const Remove_duplicate = ['Ram','Mahi','Ram','Prana','Rev','Prana'];
+const result = [];
+let remove = (input) => {
+    for (let i = 0; i < input.length; i++) {
+        if (result.indexOf(input[i]) === -1)
+            result.push(input[i]);
+    }
+    return result;
+}
+console.log(remove(Remove_duplicate));
 
 
 
