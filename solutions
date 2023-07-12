@@ -175,7 +175,15 @@ else {
 console.log(leapYear(1995));
 
 
+// Write a JavaScript program to shuffle an array.
 
+let array = [3,5,18,57,97];
+function shuffle(array) 
+{
+    return array.sort(() => 
+    Math.random() - 0.9);
+}
+  console.log(shuffle(array));
 
 
 
