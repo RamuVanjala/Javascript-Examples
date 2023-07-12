@@ -186,6 +186,34 @@ function shuffle(array)
   console.log(shuffle(array));
 
 
+  
+  //Write a JavaScript program to compute the union of two arrays.
+  function union()                                                      
+  {      
+  var array1=[3,5,18,57,97];                                           
+  var array2=[57,97,33,55,77];                               
+      var result = [];                                             
+      var obj = {};                                                
+      for (var i = 0; i < array1.length; i++)        
+      {
+          obj[array1[i]] = true;                    
+      }
+      for (var j = 0; j < array2.length; j++)                            
+      {
+          
+  obj[array2[j]] = true;
+  }
+      
+  for(const x in obj)
+      {
+          
+  result.push(x);
+      }
+      
+  return result;                                   
+      }
+  console.log(union());
+
 
 
 
