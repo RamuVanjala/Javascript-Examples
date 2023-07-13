@@ -186,7 +186,7 @@ function shuffle(array)
   console.log(shuffle(array));
 
 
-  
+
   //Write a JavaScript program to compute the union of two arrays.
   function union()                                                      
   {      
@@ -215,6 +215,38 @@ function shuffle(array)
   console.log(union());
 
 
+  //Write a JavaScript function to find the difference between two arrays.
+  function arrayDifference(arr1, arr2) {
+    const set1 = new Set(arr1);
+    const set2 = new Set(arr2);
+    const difference = [];
+    for (const element of set1) {
+      if (!set2.has(element)) {
+        difference.push(element);
+      }
+    }
+    return difference;
+}
+  const arr1 = [2,4,6,8];
+  const arr2 = [6,2,9,10];
+  const result = arrayDifference(arr1, arr2);
+  console.log(result);
+
+
+
+  //Write a JavaScript function to remove. 'null', '0', '""', 'false', 'undefined' and 'NaN' values from an array.
+  let arr = [597, 0, "Mahi", false, true, NaN, 18, "hi", undefined, [], ""];
+ 
+  function removeFalsey(arr) {
+      let newArr = [];
+      arr.forEach((k) => {
+          if (k) {
+              newArr.push(k);
+          }
+      });
+      return newArr;
+  }
+  console.log(removeFalsey(arr));
 
 
 
